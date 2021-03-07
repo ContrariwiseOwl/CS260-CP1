@@ -31,8 +31,48 @@
     width: 100%;
 }
 
+.daily-poem {
+    padding: 1.6em 1.2em;
+}
+
+.daily-poem > h2 {
+    border: red solid 1px;
+}
+
 .daily-poem > .stanza {
     align-self: flex-start;
+}
+
+.daily-poem > a {
+    align-self: flex-start;
+}
+
+.welcome {
+    margin-top: 1.4em;
+    padding: 1em 1.2em;
+}
+
+.resources {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.resource {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 120px;
+    font-size: 0.8em;
+}
+
+.resource > h6 {
+    font-size: 1.1em;
+}
+
+.resource > ul, .stanza > ul {
+    list-style: none;
 }
 
 .poem {
@@ -45,10 +85,6 @@
     text-align: center;
     font-style: italic;
     line-height: 1.1em;
-}
-
-.stanza > ul {
-    list-style: none;
 }
 
 .github {
