@@ -35,10 +35,6 @@
     padding: 1.6em 1.2em;
 }
 
-.daily-poem > h2 {
-    border: red solid 1px;
-}
-
 .daily-poem > .stanza {
     align-self: flex-start;
 }
@@ -64,11 +60,16 @@
     align-items: center;
     width: 100%;
     height: 120px;
-    font-size: 0.8em;
+    margin-top: 1em;
+    font-size: 0.86em;
 }
 
 .resource > h6 {
     font-size: 1.1em;
+}
+
+.resource > ul {
+    margin-bottom: 5px;
 }
 
 .resource > ul, .stanza > ul {
@@ -94,11 +95,63 @@
     height: 4em;
 }
 
+/*What is Poetry page Styles*/
+.mini-logo-title {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: white;
+}
+
+.mini-logo-title > h1 {
+    align-self: center;
+    justify-self: flex-end;
+}
+
 /*Mobile Styles*/
-@media only screen and (max-width: 400px) {}
+@media only screen and (max-width: 400px) {
+    .mini-logo-title > h1 {
+        padding-bottom: 1em;
+        width: 100%;
+        text-align: center;
+    }
+}
 
 /*Tablet Styles*/
-@media only screen and (min-width: 401px) and (max-width: 960px) {}
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+    .resources {
+        height: 150px;
+    }
+
+    .resource {
+        width: 33.3%;
+    }
+
+    .mini-logo-title > img {
+        width: 36%;
+    }
+
+    .mini-logo-title > h1 {
+        width: 63%;
+        text-align: center;
+    }
+}
 
 /*Desktop Styles*/
-@media only screen and (min-width: 961px) {}
+@media only screen and (min-width: 961px) {
+    .resources {
+        height: 150px;
+    }
+
+    .resource {
+        width: 33.3%;
+    }
+
+    .mini-logo-title > img {
+        width: 36%;
+    }
+
+    .mini-logo-title > h1 {
+        width: 63%;
+    }
+}
