@@ -25,13 +25,14 @@
     justify-content: center;
     width: 100%;
     background-color: lightgray;
+    font-size: 1.1em;
 }
 
 .logo-box > img {
     width: 100%;
 }
 
-.daily-poem {
+.daily-poem, .falling-poem {
     padding: 1.6em 1.2em;
 }
 
@@ -80,6 +81,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    font-size: 1.2em;
 }
 
 .poem > .poem-body {
@@ -106,6 +108,14 @@
 .mini-logo-title > h1 {
     align-self: center;
     justify-self: flex-end;
+}
+
+.what-is-discussion {
+    padding: 2em 1.2em;
+}
+
+.what-is-discussion > h6 {
+    text-align: right;
 }
 
 /*Mobile Styles*/
