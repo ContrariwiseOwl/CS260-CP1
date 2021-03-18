@@ -4,6 +4,14 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.nav-link, .dropdown-item, .navbar-text {
+    font-family: 'Merriweather', serif;
+}
+
 .bg-light {
     background-color: #f4c983 !important;
 }
@@ -46,6 +54,10 @@
 
 .daily-poem > a:visited {
     color: rgb(245, 4, 4);
+}
+
+.poem {
+    font-family: 'Kanit', sans-serif;
 }
 
 .welcome {
