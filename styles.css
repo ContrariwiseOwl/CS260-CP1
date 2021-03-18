@@ -4,9 +4,9 @@
     box-sizing: border-box;
 }
 
-/*.bg-light {
-    background-color: lightgray !important;
-}*/
+.bg-light {
+    background-color: #f4c983 !important;
+}
 
 .navbar-text {
     margin-left: auto;
@@ -14,7 +14,6 @@
 
 .background-page {
     display: flex;
-    background-color: darkgray;
     width: 100%;
     justify-content: center;
 }
@@ -24,8 +23,8 @@
     flex-wrap: wrap;
     justify-content: center;
     width: 100%;
-    background-color: lightgray;
     font-size: 1.1em;
+    color: rgb(46, 46, 46);
 }
 
 .logo-box > img {
@@ -42,10 +41,16 @@
 
 .daily-poem > a {
     align-self: flex-start;
+    color:rgb(245, 4, 4);
+}
+
+.daily-poem > a:visited {
+    color: rgb(245, 4, 4);
 }
 
 .welcome {
     margin-top: 1.4em;
+    margin-bottom: 1.4em;
     padding: 1em 1.2em;
 }
 
@@ -53,6 +58,7 @@
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+    background-color: #91a091;
 }
 
 .resource {
@@ -65,8 +71,17 @@
     font-size: 0.86em;
 }
 
+.resource a {
+    color: black;
+}
+
+.resource a:visited {
+    color: black;
+}
+
 .resource > h6 {
     font-size: 1.1em;
+    color: rgb(170, 13, 13);
 }
 
 .resource > ul {
@@ -94,7 +109,7 @@
     display: flex;
     justify-content: center;
     width: 100%;
-    height: 4em;
+    height: 1.5em;
 }
 
 /*What is Poetry page Styles*/
@@ -132,6 +147,8 @@
     justify-content: center;
     width: 100%;
     margin: 1em 0.3em;
+    background-color: rgb(243, 243, 243);
+    border-radius: 22px 22px;
 }
 
 .poet-bio > h3 {
@@ -166,6 +183,41 @@
     width: 50%;
 }
 
+/*Login Styles*/
+
+
+.login-block {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 200px;
+    border: black 1px solid;
+    margin: 3em 1em;
+}
+
+.login-block > h6, .login-block > input {
+    margin: 0px 0.6em;
+}
+
+.login-block > h6 {
+    margin-top: 20px;
+    margin-bottom: 2px;
+    padding-left: 3px;
+}
+
+.login-block > input {
+    border-radius: 7px 7px;
+}
+
+.login-block > button {
+    align-self: center;
+    margin-top: 10px;
+    border-radius: 7px 7px;
+    padding: 2px;
+    font-size: 0.9em;
+
+}
+
 /*Mobile Styles*/
 @media only screen and (max-width: 400px) {
     .mini-logo-title > h1 {
@@ -177,12 +229,20 @@
 
 /*Tablet Styles*/
 @media only screen and (min-width: 401px) and (max-width: 960px) {
+    .welcome {
+        max-width: 800px;
+    }
+    
     .resources {
         height: 150px;
     }
 
     .resource {
         width: 33.3%;
+    }
+
+    .mini-logo-title {
+        height: fit-content;
     }
 
     .mini-logo-title > img {
@@ -193,10 +253,48 @@
         width: 63%;
         text-align: center;
     }
+
+    .poet-bio {
+        width: 400px;
+        height: 420px;
+    }
+
+    .poet-bio > h3 {
+        width: 100%;
+        text-align: center;
+    }
+
+    .poet-profile {
+        width: 110px;
+    }
+
+    .login-page {
+        height: 100%;
+    }
+
+    .login-block {
+        max-width: 400px;
+    }
+
+    .login-footer {
+        margin-top: auto;
+    }
+
+    .login-subpage {
+        height: 100%;
+    }
 }
 
 /*Desktop Styles*/
 @media only screen and (min-width: 961px) {
+    .main-page {
+        width: 960px;
+    }
+
+    .welcome {
+        max-width: 800px;
+    }
+
     .resources {
         height: 150px;
     }
@@ -205,11 +303,46 @@
         width: 33.3%;
     }
 
+    .mini-logo-title {
+        height: fit-content;
+    }
+
     .mini-logo-title > img {
-        width: 36%;
+        width: 45%;
+    }
+
+    .poet-bio {
+        width: 400px;
+        height: 420px;
+    }
+
+    .poet-bio > h3 {
+        width: 100%;
+        text-align: center;
+    }
+
+    .poet-profile {
+        width: 110px;
     }
 
     .mini-logo-title > h1 {
-        width: 63%;
+        width: 54%;
+        text-align: center;
+    }
+
+    .login-page {
+        height: 100%;
+    }
+
+    .login-block {
+        max-width: 400px;
+    }
+
+    .login-footer {
+        margin-top: auto;
+    }
+
+    .login-subpage {
+        height: 100%;
     }
 }
